@@ -56,6 +56,12 @@ public class ImplementacionCatalogoPelicula implements ICatalogoPeliculas {
                 JOptionPane.QUESTION_MESSAGE
             );
         } else {
+            JOptionPane.showMessageDialog(
+                null,
+                "No se encontro la pelicula -> " + nombrePelicula,
+                "Buscar Pelicula",
+                JOptionPane.WARNING_MESSAGE
+            );
             
         }
     }
