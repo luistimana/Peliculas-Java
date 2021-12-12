@@ -78,7 +78,7 @@ public class UIPeliculas {
                 default:
                     JOptionPane.showMessageDialog(null,
                             "OPCIÓN INCORRECTA\n"
-                            + "VUEVE A IBGRESAR UNA \n"
+                            + "VUEVE A INGRESAR UNA \n"
                             + "OPCIÓN CORRECTA\n"
                             + "LAS OPCIONES SON DE 1 A 4",
                             "ERROR",
