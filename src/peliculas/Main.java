@@ -5,6 +5,7 @@
  */
 package peliculas;
 
+import javax.swing.JOptionPane;
 /**
  *
  * @author Luis Timana
@@ -12,6 +13,20 @@ package peliculas;
 public class Main {
     
     public static void main(String[] args) {
+        
+        String valor = JOptionPane.showInputDialog(
+                null,
+                "Ingrese texcto",
+                "Entrada",
+                3
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                valor,
+                "Mi mensaje",
+                2
+        );
         
     }
     
