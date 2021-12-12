@@ -1,0 +1,63 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package peliculas.modelo;
+
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Luis Timana
+ */
+public class ImplementacionCatalogoPelicula implements ICatalogoPeliculas {
+
+    private final ArrayList<String> listaPeliculas;
+
+    public ImplementacionCatalogoPelicula() {
+        this.listaPeliculas = new ArrayList<>();
+    }
+
+    @Override
+    public void insertarPelicula(Pelicula nombrePelicula) {
+        this.listaPeliculas.add(nombrePelicula.toString());
+    }
+
+    @Override
+    public void listarPelicula() {
+        JOptionPane.showMessageDialog(
+            null,
+            this.listaPeliculas,
+            "Lista de Peliculas",
+            JOptionPane.INFORMATION_MESSAGE
+        );
+    }
+
+    @Override
+    public void buscarPelicula(String nombrePelicula) {
+        String resultado = null;
+
+        for (var pelicula : this.listaPeliculas) {
+            if (pelicula.equals(nombrePelicula)) {
+                resultado = pelicula;
+                break;
+            } else {
+                resultado = pelicula;
+            }
+        }
+
+        if (nombrePelicula.equals(resultado)) {
+            JOptionPane.showMessageDialog(
+                null,
+                "Resultado -> " + resultado,
+                "Buscar Pelicula",
+                JOptionPane.QUESTION_MESSAGE
+            );
+        } else {
+            
+        }
+    }
+
+}
